@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TikTok关注列表</string>
+    <string name="mutual_follow">互关</string>
+    <string name="follow">关注</string>
+    <string name="fans">粉丝</string>
+    <string name="friends">朋友</string>
+    <string name="my_follow">我的关注(人)</string>
+    <string name="no_mutual_follow">暂无互关</string>
+    <string name="no_fans">暂无粉丝</string>
+    <string name="no_friends">暂无朋友</string>
+    <string name="followed">已关注</string>
+    <string name="to_follow">关注</string>
+    <string name="confirm_unfollow">是否取消关注</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="special_follow">特别关注</string>
+    <string name="set_remark">设置备注</string>
+    <string name="unfollow">取消关注</string>
+    <string name="input_remark">请输入备注</string>
+    <string name="my_mutual_follow">我的互关(0人)</string>
+    <string name="my_fans">我的粉丝(0人)</string>
+    <string name="my_friends">我的朋友(0人)</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 用户信息 -->
+    <TextView
+        android:id="@+id/tv_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"
+        android:layout_marginVertical="8dp"/>
+
+    <!-- 特别关注开关（修复：将justifyContent改为gravity） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+    android:paddingHorizontal="8dp">  <!-- 可选：增加内边距优化显示 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/special_follow"
+        android:textSize="16sp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_special_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"/>  <!-- 让开关靠右显示 -->
+
+</LinearLayout>
+
+    <!-- 设置备注 -->
+    <TextView
+        android:id="@+id/tv_set_remark"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/set_remark"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="8dp"/>  <!-- 增加内边距对齐 -->
+
+    <!-- 取消关注 -->
+    <TextView
+    android:id="@+id/tv_unfollow"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="@string/unfollow"
+    android:textSize="16sp"
+    android:textColor="@color/red_follow"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="8dp"/>  <!-- 增加内边距对齐 -->
+
+    </LinearLayout>
