@@ -3,6 +3,9 @@
 ## 项目介绍
 本项目是一个模拟抖音关注列表功能的Android原生应用，基于Java语言开发，适配Android 7.0+（API 24），实现了关注管理、状态切换、本地数据持久化等核心功能，还原了短视频平台关注列表的经典交互逻辑。
 
+## 项目演示
+[点击前往演示视频-BiliBili](https://www.bilibili.com/video/BV1nVUCBVE7z/?spm_id_from=333.1387.homepage.video_card.click&vd_source=bef90db70f95cb50eb617452a4ebf8ce)
+
 ## 技术栈
 - 开发语言：Java
 - 开发工具：Android Studio
@@ -11,9 +14,9 @@
 - 核心框架/组件：
   - AndroidX（AppCompat、ConstraintLayout、RecyclerView）
   - Material Design（TabLayout、BottomSheetDialog、SwitchCompat）
-  - SwipeRefreshLayout（下拉刷新）
-  - SharedPreferences（本地数据存储）
-  - ViewBinding（视图绑定，简化布局操作）
+  - SwipeRefreshLayout
+  - SharedPreferences
+  - ViewBinding
 
 ## 功能特点
 ### 1. 栏目切换
