@@ -314,7 +314,7 @@ public class FollowActivity extends AppCompatActivity {
             // 读取本地存储中已关注用户
             List<User> allUsers = SharedPreferencesUtil.getFollowList(this);
 
-            // 过滤可能出现的乱码
+            // 过滤未关注用户
             followList.clear();
             for (User user : allUsers) {
                 if (user.isFollowed()) {

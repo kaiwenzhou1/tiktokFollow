@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.tiktokfollow.R;
@@ -67,6 +69,12 @@ public class FollowListAdapter extends RecyclerView.Adapter<FollowListAdapter.Fo
         } else {
             holder.tvSpecialFollow.setVisibility(View.GONE);
         }
+
+        // 头像点击消息提示
+        holder.ivAvatar.setOnClickListener(v -> {
+            String toastText = String.format("已选中-%s", user.getShowName());
+            Toast.makeText(context, toastText, Toast.LENGTH_SHORT).show();
+        });
 
         // 设置关注按钮状态
         if (user.isFollowed()) {
