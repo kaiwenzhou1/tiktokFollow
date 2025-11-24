@@ -94,6 +94,17 @@ public class FollowListAdapter extends RecyclerView.Adapter<FollowListAdapter.Fo
             }
         });
 
+        // 根据关注状态控制更多操作按钮
+        if (user.isFollowed()) {
+            // 已关注状态才能启用按钮
+            holder.ivMore.setEnabled(true);
+            holder.ivMore.setAlpha(1.0f);
+        } else {
+            // 未关注则禁用更多操作按钮
+            holder.ivMore.setEnabled(false);
+            holder.ivMore.setAlpha(0.5f);
+        }
+
         // 更多操作点击
         holder.ivMore.setOnClickListener(v -> {
             if (moreBtnClickListener != null) {
