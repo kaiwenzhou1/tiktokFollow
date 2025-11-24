@@ -13,32 +13,34 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:tabMode="scrollable"
-        app:tabGravity="start"
+
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+
         app:tabTextColor="@color/gray_unfollowed"
         app:tabSelectedTextColor="@color/black"
         app:tabIndicatorColor="@color/black"
         app:tabIndicatorHeight="2dp">
 
         <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/mutual_follow"/>
+            android:text="@string/mutual_follow" />
 
         <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/follow"/>
+            android:text="@string/follow" />
 
         <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/fans"/>
+            android:text="@string/fans" />
 
         <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/friends"/>
+            android:text="@string/friends" />
 
     </com.google.android.material.tabs.TabLayout>
 
