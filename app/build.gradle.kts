@@ -48,4 +48,5 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(libs.gson)
     implementation(libs.swiperefreshlayout)
+    implementation(libs.glide)
 }
